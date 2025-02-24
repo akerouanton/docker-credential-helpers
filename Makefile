@@ -31,6 +31,7 @@ build-%: # build, can be one of build-osxkeychain build-pass build-secretservice
 osxkeychain: build-osxkeychain
 secretservice: build-secretservice
 pass: build-pass
+passthrough: build-passthrough
 wincred: build-wincred
 
 .PHONY: cross

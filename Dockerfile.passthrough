@@ -1,0 +1,5 @@
+# GOOS=linux GOARCH=arm64 make passthrough
+# docker build --push -t albinkerouanton006/docker-credential-passthrough -f Dockerfile.passthrough .
+FROM scratch
+
+COPY ./bin/build/docker-credential-passthrough /docker-credential-passthrough
